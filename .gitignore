@@ -30,3 +30,5 @@ htmlcov/
 applications/*/tests/
 description.todo
 python3env
+*.mp4
+*.part
