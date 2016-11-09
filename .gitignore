@@ -21,6 +21,7 @@ cache/
 #*/prod.log
 #*/*.log
 
+totrash/
 #*.sqlite3
 secret_key.txt
 #settings/production.py
