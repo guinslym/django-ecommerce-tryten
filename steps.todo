@@ -1,3 +1,5 @@
 difficulty:
  ☐ Overriding the defaulttemplates didn'twork fine 
- ☐ http://stackoverflow.com/questions/18791136/how-to-override-template-in-django-allauth
+   ☐ http://stackoverflow.com/questions/18791136/how-to-override-template-in-django-allauth
+   ☐ The account template folder of Django-Allauth needs to be within the Templates folder of my MAIN app.
+ ☐ This tutorial had another way to setup staticfiles that I wasn't used to so I had some bugs with the static files
