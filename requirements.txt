@@ -8,4 +8,4 @@ python3-openid==3.0.10
 requests==2.11.1
 requests-oauthlib==0.7.0
 sqlparse==0.2.2
-
+stripe==1.41.1
