@@ -1,4 +1,5 @@
 {% extends 'base.html' %}
+{% load staticfiles %}
 
 {% block title %}My Title ----{% endblock %}
 
@@ -21,5 +22,33 @@
 
 
 {% block content %}
-<h1>Hello World how are you</h1>
+
+        <div class="col-md-4">
+          <h2>Heading</h2>
+          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+          <p><a class="btn btn-default" href="#" role="button">View details »</a></p>
+        </div>
+        <div class="col-md-4">
+          <h2>Heading</h2>
+          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+          <p><a class="btn btn-default" href="#" role="button">View details »</a></p>
+       </div>
+        <div class="col-md-4">
+			{% if request.user.is_authenticated %}
+				<h3>Hello {{ request.user }} </h3>
+
+			{% else %}
+				<form class="login" method="POST" action="{% url 'account_login' %}">
+					  {% csrf_token %}
+					  <p><label for="id_login">Login:</label> <input autofocus="autofocus" id="id_login" name="login" placeholder="Username or e-mail" type="text" required /></p>
+					<p><label for="id_password">Password:</label> <input id="id_password" name="password" placeholder="Password" type="password" required /></p>
+					<p><label for="id_remember">Remember Me:</label> <input id="id_remember" name="remember" type="checkbox" /></p>
+					  
+					  <a class="button secondaryAction" href="{% url 'account_reset_password' %}">Forgot Password?</a> <br>
+					   <a class="button secondaryAction" href="{% url 'account_signup' %}">Signup</a> <br>
+					  <button class="primaryAction" type="submit">Sign In</button>
+				</form>
+			{% endif %}
+        </div>
+      
 {% endblock %}
