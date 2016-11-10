@@ -25,7 +25,6 @@ totrash/
 #*.sqlite3
 secret_key.txt
 #settings/production.py
-staticfiles/
 htmlcov/
 applications/*/tests/
 description.todo
