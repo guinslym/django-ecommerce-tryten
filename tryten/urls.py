@@ -22,8 +22,8 @@ from profiles import views as profiles_views
 from contact import views as contact_views
 
 urlpatterns = [
-    url(r'^admin/', admin.site.urls),
     url(r'^$', profiles_views.home, name='home'),
+    url(r'^admin/', admin.site.urls),
     url(r'^about/$', profiles_views.about, name='about'),
     url(r'^contact/$', contact_views.contact, name='contact'),
     url(r'^accounts/', include('allauth.urls')),
