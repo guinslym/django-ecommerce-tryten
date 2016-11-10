@@ -1,16 +1,4 @@
-conda==4.2.12
-defusedxml==0.4.1
 Django==1.10.3
 django-allauth==0.28.0
 django-crispy-forms==1.6.1
 django-debug-toolbar==1.6
-menuinst==1.4.2
-oauthlib==2.0.0
-pycosat==0.6.1
-pycrypto==2.6.1
-python3-openid==3.0.10
-pywin32==220
-requests==2.11.1
-requests-oauthlib==0.7.0
-ruamel-yaml===-VERSION
-sqlparse==0.2.2
