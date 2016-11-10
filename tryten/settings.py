@@ -42,15 +42,15 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-
      'debug_toolbar',
      'crispy_forms',
-
     'profiles',
     'contact',
     'allauth',
     'allauth.account',
     'allauth.socialaccount',
+    'checkout',
+    'stripe',
 ]
 
 SITE_ID = 1

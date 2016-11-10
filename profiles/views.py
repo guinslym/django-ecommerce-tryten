@@ -20,3 +20,4 @@ def userProfile(request):
 	context = {'user': user }
 	template = 'profile.html'
 	return render(request, template, context)
+    
